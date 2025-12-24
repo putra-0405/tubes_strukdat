@@ -15,7 +15,7 @@ void tampilkanMenu() {
     cout << "9. Tampilkan Penulis dari Buku tertentu\n";
     cout << "10. Tampilkan Penulis paling aktif & tidak aktif\n";
     cout << "0. Keluar\n";
-    cout << "Pilihan:";
+    cout << "Pilihan: ";
 }
 
 int main() {
