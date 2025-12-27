@@ -14,6 +14,8 @@ void createListPenulis(ListPenulis &LP) {
 
 adrBuku alokasiBuku(const Buku &b) {
     adrBuku p = new elmBuku;
+    if (p == nullptr) return nullptr;
+
     p->info = b;
     p->next = nullptr;
     return p;
@@ -21,6 +23,8 @@ adrBuku alokasiBuku(const Buku &b) {
 
 adrPenulis alokasiPenulis(const Penulis &pen) {
     adrPenulis p = new elmPenulis;
+    if (p == nullptr) return nullptr;
+
     p->info = pen;
     p->next = nullptr;
     p->prev = nullptr;
@@ -30,6 +34,8 @@ adrPenulis alokasiPenulis(const Penulis &pen) {
 
 adrRelasi alokasiRelasi(adrBuku b) {
     adrRelasi r = new elmRelasi;
+    if (r == nullptr) return nullptr;
+    
     r->buku = b;
     r->next = nullptr;
     return r;
