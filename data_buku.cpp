@@ -1,6 +1,6 @@
 #include "data_buku.h"
 
-// INISIALISASI LIST
+// Iinisialisasi list
 void createListBuku(ListBuku &LB) {
     LB.first = nullptr;
 }
@@ -10,7 +10,7 @@ void createListPenulis(ListPenulis &LP) {
     LP.last = nullptr;
 }
 
-// ALOKASI NODE
+// Alokasi Node
 
 adrBuku alokasiBuku(const Buku &b) {
     adrBuku p = new elmBuku;
